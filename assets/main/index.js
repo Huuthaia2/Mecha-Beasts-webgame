@@ -8580,11 +8580,47 @@ window.__require = function t(e, i, n) {
 					var i = this;
 					i._ttype;
 					if (i._tproduct = t.product, i._tkey = t.key, i._tprice = t.price, i._ttype = t.type, i._tcb = t.cb, i._tsharenorewardcb = t.sharenorewardcb, i._tfinishcb = t.finishcb, i._tclosecb = t.closecb, !u || s.default.MP_GAME_SHENHE_FBINS) return this.hideLoading(), s.default.AUDIO && -1 != s.default.AUDIO.bgmAudioID && s.default.AUDIO.getMusicVolume() > 0 && (cc.audioEngine.pauseMusic(), cc.audioEngine.resumeMusic(), cc.audioEngine.setMusicVolume(s.default.AUDIO.getMusicVolume())), c.default.getInstance().addCnt(4, 1), this._tcb && this._tcb(), void(i._tfinishcb && i._tfinishcb());
-					d.default.isRewardedVideoReady() ? (s.default.AUDIO && -1 != s.default.AUDIO.bgmAudioID && s.default.AUDIO.getMusicVolume() > 0 && cc.audioEngine.pauseMusic(), d.default.showRewardedVideo().then(function() {
-						console.log("showAsyncs"), e.hideLoading(), s.default.AUDIO && -1 != s.default.AUDIO.bgmAudioID && s.default.AUDIO.getMusicVolume() > 0 && (cc.audioEngine.pauseMusic(), cc.audioEngine.resumeMusic(), cc.audioEngine.setMusicVolume(s.default.AUDIO.getMusicVolume())), c.default.getInstance().addCnt(4, 1), e._tcb && e._tcb(), i._tfinishcb && i._tfinishcb(), u.logEvent("showVideoSucess", 1, {
+					d.default.isRewardedVideoReady() ? (
+                        s.default.AUDIO && 
+                        -1 != s.default.AUDIO.bgmAudioID && 
+                        s.default.AUDIO.getMusicVolume() > 0 && 
+                        cc.audioEngine.pauseMusic(), 
+
+                        console.log("showAsyncs"), 
+                        e.hideLoading(), 
+                        s.default.AUDIO && 
+                        -1 != s.default.AUDIO.bgmAudioID && 
+                        s.default.AUDIO.getMusicVolume() > 0 && 
+                        (
+                        cc.audioEngine.pauseMusic(), 
+                        cc.audioEngine.resumeMusic(), 
+                        cc.audioEngine.setMusicVolume(s.default.AUDIO.getMusicVolume())), 
+                        c.default.getInstance().addCnt(4, 1), 
+                        e._tcb && e._tcb(), 
+                        i._tfinishcb && i._tfinishcb(),
+                        u.logEvent("showVideoSucess", 1, {
 							property: ""
 						})
-					}).catch(function(t) {
+
+                        
+                    // d.default.showRewardedVideo().then(function() {
+					// 	console.log("showAsyncs"), 
+                    //     e.hideLoading(), 
+                    //     s.default.AUDIO && 
+                    //     -1 != s.default.AUDIO.bgmAudioID && 
+                    //     s.default.AUDIO.getMusicVolume() > 0 && 
+                    //     (
+                    //     cc.audioEngine.pauseMusic(), 
+                    //     cc.audioEngine.resumeMusic(), 
+                    //     cc.audioEngine.setMusicVolume(s.default.AUDIO.getMusicVolume())), 
+                    //     c.default.getInstance().addCnt(4, 1), 
+                    //     e._tcb && e._tcb(), 
+                    //     i._tfinishcb && i._tfinishcb(),
+                    //     u.logEvent("showVideoSucess", 1, {
+					// 		property: ""
+					// 	})
+					// })
+                    .catch(function(t) {
 						console.log("showAsyncf"), s.default.AUDIO && -1 != s.default.AUDIO.bgmAudioID && s.default.AUDIO.getMusicVolume() > 0 && (cc.audioEngine.pauseMusic(), cc.audioEngine.resumeMusic(), cc.audioEngine.setMusicVolume(s.default.AUDIO.getMusicVolume())), console.log("incentiveVideo", t), u.logEvent("showVideoFail", 1, {
 							property: t
 						}), e.hideLoading(), i._tclosecb && i._tclosecb()
