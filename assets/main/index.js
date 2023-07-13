@@ -504,7 +504,7 @@ window.__require = function t(e, i, n) {
 							break
 						}
 					}
-					return i
+					return !0
 				}, t._showAsync = function(t) {
                     console.log("t._showAsync");
 					for (var e = t == s.INTERSTITIAL ? this._interstitialAds : this._rewardedVideos, i = null, n = 0; n < e.length; n++) {
@@ -5490,6 +5490,8 @@ window.__require = function t(e, i, n) {
 						t ? cc.error(t) : e && e()
 					})
 				}, e.prototype.preloadBattleResItemCallback = function(t, e, i) {
+                    this._preloadFinish = !0, this.checkTurn2();
+                    return;
 					this._preloadLock = !1, 0 == t && (e.status = 2, this._preloadBattleResQueue.curIndex++, this._preloadBattleResQueue.curIndex >= this._preloadBattleResQueue.resLength && (console.log("mhc \u6218\u6597\u8d44\u6e90\u63d0\u524d\u52a0\u8f7d\u5b8c\u6bd5"), this._preloadFinish = !0, this.checkTurn2()))
 				}, e.prototype.preloadBattleGetObj = function(t, e, i, n) {
 					void 0 === n && (n = 1);
