@@ -8602,7 +8602,7 @@ window.__require = function t(e, i, n) {
 							property: ""
 						})
 
-                        
+
                     // d.default.showRewardedVideo().then(function() {
 					// 	console.log("showAsyncs"), 
                     //     e.hideLoading(), 
@@ -8620,11 +8620,13 @@ window.__require = function t(e, i, n) {
 					// 		property: ""
 					// 	})
 					// })
-                    .catch(function(t) {
-						console.log("showAsyncf"), s.default.AUDIO && -1 != s.default.AUDIO.bgmAudioID && s.default.AUDIO.getMusicVolume() > 0 && (cc.audioEngine.pauseMusic(), cc.audioEngine.resumeMusic(), cc.audioEngine.setMusicVolume(s.default.AUDIO.getMusicVolume())), console.log("incentiveVideo", t), u.logEvent("showVideoFail", 1, {
-							property: t
-						}), e.hideLoading(), i._tclosecb && i._tclosecb()
-					})) : a.default.getInstance().tips("wait ad load")
+                    // .catch(function(t) {
+					// 	console.log("showAsyncf"), s.default.AUDIO && -1 != s.default.AUDIO.bgmAudioID && s.default.AUDIO.getMusicVolume() > 0 && (cc.audioEngine.pauseMusic(), cc.audioEngine.resumeMusic(), cc.audioEngine.setMusicVolume(s.default.AUDIO.getMusicVolume())), console.log("incentiveVideo", t), u.logEvent("showVideoFail", 1, {
+					// 		property: t
+					// 	}), e.hideLoading(), i._tclosecb && i._tclosecb()
+					// })
+                    ) 
+                    : a.default.getInstance().tips("wait ad load")
 				}, t.prototype.showInterstitialAd = function(t) {
 					cc.log(l.default.getInstance().isNew, "PlayerData.getInstance().isNew"), u && !s.default.MP_GAME_SHENHE_FBINS && d.default.isInterstitialAdReady() && d.default.showInterstitialAd().then(function() {
 						console.log("showAsyncs"), u.logEvent("showInterSucess", 1, {
