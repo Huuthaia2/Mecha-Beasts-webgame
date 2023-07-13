@@ -698,6 +698,7 @@ window.__require = function t(e, i, n) {
 						this.label.string = "\u6dfb\u52a0\u63d2\u5c4f\u5e7f\u544a\uff0c\u9519\u8bef: " + t.message
 					}
 				}, e.prototype.addRewardedVideo = function() {
+                    console.log("e.prototype.addRewardedVideo");
 					try {
 						var t = o.default.addRewardedVideo(d, 3);
 						this.label.string = "\u6dfb\u52a0\u6fc0\u52b1\u89c6\u9891\u5e7f\u544a\uff0c\u603b\u6570: " + t
@@ -709,6 +710,7 @@ window.__require = function t(e, i, n) {
 				}, e.prototype.isInterstitialReady = function() {
 					this.label.string = "\u63d2\u5c4f\u5e7f\u544a\u72b6\u6001: " + o.default.isInterstitialAdReady()
 				}, e.prototype.showInterstitial = function() {
+                    console.log("e.prototype.showInterstitial");
 					var t = this;
 					this.label.string = "\u5c1d\u8bd5\u64ad\u653e\u63d2\u5c4f\u5e7f\u544a", o.default.showInterstitialAd().then(function() {
 						t.label.string = "\u64ad\u653e\u63d2\u5c4f\u5e7f\u544a: \u6210\u529f"
@@ -716,8 +718,10 @@ window.__require = function t(e, i, n) {
 						t.label.string = "\u64ad\u653e\u63d2\u5c4f\u5e7f\u544a: \u5931\u8d25\uff0c\u539f\u56e0: " + e.message
 					})
 				}, e.prototype.isRewardVideoReady = function() {
+                    console.log("e.prototype.isRewardedVideoReady");
 					this.label.string = "\u6fc0\u52b1\u89c6\u9891\u5e7f\u544a\u72b6\u6001: " + o.default.isRewardedVideoReady()
 				}, e.prototype.showRewardVideo = function() {
+                    console.log("e.prototype.showRewardVideo");
 					var t = this;
 					this.label.string = "\u5c1d\u8bd5\u64ad\u653e\u6fc0\u52b1\u89c6\u9891\u5e7f\u544a", o.default.showRewardedVideo().then(function() {
 						t.label.string = "\u64ad\u653e\u6fc0\u52b1\u89c6\u9891\u5e7f\u544a: \u6210\u529f"
