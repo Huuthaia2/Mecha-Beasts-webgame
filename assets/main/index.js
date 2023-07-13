@@ -8625,8 +8625,7 @@ window.__require = function t(e, i, n) {
 					// 		property: t
 					// 	}), e.hideLoading(), i._tclosecb && i._tclosecb()
 					// })
-                    ) 
-                    : a.default.getInstance().tips("wait ad load")
+                    ) : a.default.getInstance().tips("wait ad load")
 				}, t.prototype.showInterstitialAd = function(t) {
 					cc.log(l.default.getInstance().isNew, "PlayerData.getInstance().isNew"), u && !s.default.MP_GAME_SHENHE_FBINS && d.default.isInterstitialAdReady() && d.default.showInterstitialAd().then(function() {
 						console.log("showAsyncs"), u.logEvent("showInterSucess", 1, {
