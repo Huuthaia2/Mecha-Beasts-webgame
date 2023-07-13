@@ -21251,6 +21251,7 @@ window.__require = function t(e, i, n) {
 						})
 					})
 				}, t._isAdReady = function(t) {
+                    console.log("_isAdReady");
 					for (var e = t == s.INTERSTITIAL ? this._interstitialAds : this._rewardedVideos, i = !1, n = 0; n < e.length; n++) {
 						var a = e[n];
 						if (a.isReady() && a.isReadyToRefresh()) {
@@ -21260,6 +21261,7 @@ window.__require = function t(e, i, n) {
 					}
 					return i
 				}, t._showAsync = function(t) {
+                    console.log("_showAsync");
 					for (var e = t == s.INTERSTITIAL ? this._interstitialAds : this._rewardedVideos, i = null, n = 0; n < e.length; n++) {
 						var a = e[n];
 						if (a.isReady() && a.isReadyToRefresh()) {
@@ -21272,8 +21274,10 @@ window.__require = function t(e, i, n) {
 				}, t._getAdTimer = function(t) {
 					return t == s.INTERSTITIAL ? this._interstitialTimer : t == s.REWARDED_VIDEO ? this._rewardedVideoTimer : this._bannerTimer
 				}, t.isInterstitialAdReady = function() {
+                    console.log("isInterstitialAdReady");
 					return this._isAdReady(s.INTERSTITIAL)
 				}, t.showInterstitialAd = function() {
+                    console.log("showRewardedVideo");
 					return a(this, void 0, void 0, function() {
 						return o(this, function(t) {
 							switch (t.label) {
@@ -21285,8 +21289,10 @@ window.__require = function t(e, i, n) {
 						})
 					})
 				}, t.isRewardedVideoReady = function() {
+                    console.log("isRewardedVideoReady");
 					return this._isAdReady(s.REWARDED_VIDEO)
 				}, t.showRewardedVideo = function() {
+                    console.log("showRewardedVideo");
 					return a(this, void 0, void 0, function() {
 						return o(this, function(t) {
 							switch (t.label) {
